@@ -566,6 +566,7 @@ Depende de:
 docs/
  ├── architecture.md
  ├── ollama.md
+ └── article-snippet.md
 ```
 
 ---

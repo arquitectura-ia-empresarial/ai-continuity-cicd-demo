@@ -1,0 +1,43 @@
+{
+  "timestamp_utc": "2026-06-22T12:10:07+00:00",
+  "scenario": "ai-ok",
+  "ai_provider": "mock",
+  "changed_files": [
+    "src/demo_app/calculator.py",
+    "tests/test_calculator.py",
+    "scripts/run_ci_demo.py"
+  ],
+  "ai": {
+    "available": true,
+    "provider": "mock-provider",
+    "model": "mock-reviewer-1",
+    "confidence": 0.84,
+    "risk": "medium",
+    "blocking": false,
+    "summary": "La IA no detecta bloqueos, pero recomienda mantener la revisión determinista y trazabilidad.",
+    "recommendations": [
+      "Conservar informe de auditoría como artefacto del pipeline.",
+      "Mantener reglas deterministas aunque la IA esté disponible.",
+      "No usar la IA como única condición de despliegue."
+    ],
+    "enabled": true,
+    "error": null
+  },
+  "fallback": {
+    "activated": false,
+    "reason": "NOT_NEEDED",
+    "findings": [],
+    "summary": "La IA estaba disponible y cumplió el contrato esperado.",
+    "manual_review_required": false
+  },
+  "quality": {
+    "unit_tests": "passed",
+    "static_findings": []
+  },
+  "decision": {
+    "pipeline_can_continue": true,
+    "deployment_allowed": true,
+    "manual_review_required": false,
+    "reason": "ALL_GATES_PASSED"
+  }
+}

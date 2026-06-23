@@ -1,6 +1,7 @@
 __pycache__/
 *.pyc
 .venv/
+.vscode/
 .env
 reports/*.json
 reports/*.md

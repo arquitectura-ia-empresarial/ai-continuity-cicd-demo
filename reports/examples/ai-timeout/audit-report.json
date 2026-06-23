@@ -1,0 +1,39 @@
+{
+  "timestamp_utc": "2026-06-22T12:10:12+00:00",
+  "scenario": "ai-timeout",
+  "ai_provider": "mock",
+  "changed_files": [
+    "src/demo_app/calculator.py",
+    "tests/test_calculator.py",
+    "scripts/run_ci_demo.py"
+  ],
+  "ai": {
+    "enabled": true,
+    "available": false,
+    "provider": "mock",
+    "model": "mock-reviewer-1",
+    "confidence": null,
+    "risk": null,
+    "blocking": false,
+    "summary": "La IA no produjo una respuesta utilizable.",
+    "recommendations": [],
+    "error": "AI_TIMEOUT"
+  },
+  "fallback": {
+    "activated": true,
+    "reason": "AI_TIMEOUT",
+    "findings": [],
+    "summary": "Fallback activado: no hay bloqueos deterministas, pero se requiere revisión humana por indisponibilidad o invalidez de la IA.",
+    "manual_review_required": true
+  },
+  "quality": {
+    "unit_tests": "passed",
+    "static_findings": []
+  },
+  "decision": {
+    "pipeline_can_continue": true,
+    "deployment_allowed": false,
+    "manual_review_required": true,
+    "reason": "AI_TIMEOUT"
+  }
+}

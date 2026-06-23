@@ -1,0 +1,18 @@
+{
+  "minimum_ai_confidence": 0.70,
+  "manual_review_required_when_ai_unavailable": true,
+  "manual_review_required_when_ai_invalid": true,
+  "deployment_allowed_when_fallback_active": false,
+  "deployment_allowed_when_ai_risk_is_high": false,
+  "blocking_static_patterns": [
+    "eval(",
+    "exec(",
+    "password=",
+    "secret=",
+    "api_key="
+  ],
+  "warning_static_patterns": [
+    "TODO",
+    "FIXME"
+  ]
+}
