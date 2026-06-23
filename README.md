@@ -20,7 +20,7 @@ El repositorio tiene dos modos de ejecución:
 Si solo quieres ver la idea funcionando sin instalar nada más que Python:
 
 ```bash
-git clone https://github.com/<tu-usuario>/ai-continuity-cicd-demo.git
+git clone https://github.com/arquitectura-ia-empresarial/ai-continuity-cicd-demo.git
 cd ai-continuity-cicd-demo
 
 python -m unittest discover -s tests
